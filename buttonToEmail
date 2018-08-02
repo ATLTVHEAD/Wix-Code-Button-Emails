@@ -1,0 +1,125 @@
+import wixCRM from 'wix-crm';
+import wixUsers from 'wix-users';
+
+
+//...
+
+
+
+
+
+$w.onReady(function () {
+	//TODO: write your page related code here...
+
+});
+
+export function B4_rainbow(event, $w) {
+	//Add your code for this event here: 
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'rnbw'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+}
+
+
+export function Glitch_click(event, $w) {
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'gltchd'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+
+}
+
+export function Fix_click(event, $w) {
+	//Add your code for this event here: 
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'fxdgltch'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+}
+
+export function Heart_click(event, $w) {
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'hrt'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+	//Add your code for this event here: 
+}
+
+export function bgcolor_click(event, $w) {
+	//Add your code for this event here: 
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'bgclr'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+}
+
+export function reset_click(event, $w) {
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'rst'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+}
+
+export function ch1_click(event, $w) {	
+	wixCRM.createContact({
+		"emails":['atltvhead@gmail.com']
+		})
+		.then((contactId)=>{
+			wixCRM.emailContact('ToPython',contactId, {
+  				variables: {
+  	 	 command: 'ch1'
+		}})
+		.catch( (err) => {
+    		console.log(err)
+		});
+	});
+}
